@@ -12,10 +12,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: PROD
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: local-actions/cicd@v1
+      - uses: actions/checkout@v4
+      - uses: ./actions/cicd
