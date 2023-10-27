@@ -11,6 +11,6 @@
 
 <style lang="scss">
 html {
-  overflow: auto;
+  overflow: auto !important;
 }
 </style>
