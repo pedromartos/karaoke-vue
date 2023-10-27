@@ -5,8 +5,8 @@ runs:
   using: "composite"
   steps:
     - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+      with:
+        node-version: 18
     - name: Get yarn cache directory path 🛠
       id: yarn-cache-dir-path
       run: echo "::set-output name=dir::$(yarn cache dir)"
