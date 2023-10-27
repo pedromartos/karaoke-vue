@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="bg-deep-purple">
     <v-main>
       <router-view />
     </v-main>
@@ -8,3 +8,9 @@
 
 <script setup lang="ts">
 </script>
+
+<style lang="scss">
+html {
+  overflow: auto;
+}
+</style>

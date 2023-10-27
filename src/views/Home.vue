@@ -51,7 +51,7 @@ const updateTime = () => {
   state.currentTime = player.value.currentTime;
 
   // Scrolls the page to keep the active line centered
-  const activeElement = document.querySelector('.lyrics .active');
+  const activeElement = document.querySelector('.lyrics .active') as HTMLElement;
   if (activeElement != undefined) {
     const top = activeElement.offsetTop - (lyricsContainer.value.offsetHeight / 2);
     lyricsContainer.value.scrollTo({ top: top, behavior: 'smooth' });
@@ -192,7 +192,7 @@ onMounted(() => {
 .lyrics {
   color: #fff;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   overflow: auto;
   position: relative;
 
