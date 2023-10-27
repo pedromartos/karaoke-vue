@@ -142,11 +142,13 @@ onMounted(() => {
   // player.value.currentTime = 15;
 });
 
+const title = import.meta.env.VITE_TEST_VAR;
+
 </script>
 
 <template>
   <v-container class="d-flex flex-column align-center justify-center fill-height">
-
+    <h1>{{ title }}</h1>
     <v-expand-transition>
       <div class="lyrics bg-deep-purple-darken-3 rounded-lg pa-4 mb-10" v-show="lyricsLoaded" ref="lyricsContainer">
         <div class="content d-flex flex-column align-center justify-center">
