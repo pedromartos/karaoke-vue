@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Vue s3 deployer action
 
-name: Deployment
+name: Deployment DEV
 
 on:
   push:
@@ -18,4 +18,4 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/cicd@v1
+      - uses: local-actions/cicd@v1
